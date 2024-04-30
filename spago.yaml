@@ -1,8 +1,13 @@
 package:
   name: project-euler
   dependencies:
+    - assert
     - console
     - effect
+    - foldable-traversable
+    - lists
+    - node-process
+    - partial
     - prelude
   test:
     main: Test.Main
