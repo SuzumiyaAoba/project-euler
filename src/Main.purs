@@ -8,11 +8,13 @@ import Data.Maybe (Maybe, fromJust)
 import Effect (Effect)
 import Effect.Console (log)
 import Euler1 as Euler1
+import Euler2 as Euler2
 import Node.Process (argv)
 import Partial.Unsafe (unsafePartial)
 
 answers :: Array (Unit -> String)
-answers = [Euler1.answer]
+answers = [ Euler1.answer
+          , Euler2.answer]
 
 indexFromArgs :: Array String -> Maybe Int
 indexFromArgs args = 
