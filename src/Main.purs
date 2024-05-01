@@ -1,4 +1,8 @@
-module Main where
+module Main
+  ( answers
+  , main
+  )
+  where
 
 import Prelude
 
@@ -9,13 +13,15 @@ import Effect (Effect)
 import Effect.Console (log)
 import Euler1 as Euler1
 import Euler2 as Euler2
+import Euler3 as Euler3
 import Node.Process (argv)
 import Partial.Unsafe (unsafePartial)
 
 answers :: Array (Unit -> String)
 answers = [ Euler1.answer
-          , Euler2.answer]
-
+          , Euler2.answer
+          , Euler3.answer ]
+          
 indexFromArgs :: Array String -> Maybe Int
 indexFromArgs args = 
   (add (-1)) <$> ((index args 2) >>= fromString)

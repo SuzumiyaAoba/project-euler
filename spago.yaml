@@ -5,6 +5,7 @@ package:
     - console
     - effect
     - foldable-traversable
+    - js-bigints
     - lists
     - node-process
     - partial
