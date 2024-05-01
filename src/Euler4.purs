@@ -14,6 +14,8 @@ import Partial.Unsafe (unsafePartial)
 -- | from the product of two 2-digit numbers is 9009 = 91 × 99.
 -- |
 -- | Find the largest palindrome made from the product of two 3-digit numbers.
+-- |
+-- | https://projecteuler.net/problem=4
 
 reverse :: String -> String
 reverse = toCharArray >>> Array.reverse >>> fromCharArray
