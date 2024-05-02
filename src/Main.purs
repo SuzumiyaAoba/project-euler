@@ -15,6 +15,7 @@ import Euler1 as Euler1
 import Euler2 as Euler2
 import Euler3 as Euler3
 import Euler4 as Euler4
+import Euler5 as Euler5
 import Node.Process (argv)
 import Partial.Unsafe (unsafePartial)
 
@@ -22,7 +23,8 @@ answers :: Array (Unit -> String)
 answers = [ Euler1.answer
           , Euler2.answer
           , Euler3.answer
-          , Euler4.answer ]
+          , Euler4.answer
+          , Euler5.answer ]
           
 indexFromArgs :: Array String -> Maybe Int
 indexFromArgs args = 
